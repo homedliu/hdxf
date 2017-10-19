@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我要选妃</title>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/resLoader.js"></script>
+
+</head>
+<body>
+<div id="main"  class="main">
+    <!--音乐开关-->
+    <button class="btn_music"><i></i><audio loop="loop"  id="media" > <source src="" type="audio/mpeg"></audio></button>
+    <!--音乐开关end-->
+    <img src="images/icon_yun01.png" alt="icon_yun01"  class="icon_yun01"/>
+    <img src="images/icon_yun02.png" alt="icon_yun02"  class="icon_yun02"/>
+    <img src="images/icon_yun03.png" alt="icon_yun03"  class="icon_yun03"/>
+    <img src="images/icon_yun04.png" alt="icon_yun04"  class="icon_yun04"/>
+    <!--加载页面-->
+    <div class="loading_page">
+        <p><span class="current">1%</span></p>
+    </div>
+    <!--加载页面end-->
+    <!--首页-->
+    <div class="index_box">
+        <a class="icon_hdysc"><img src="images/icon_hdysc.png" alt="icon_hdysc"/></a>
+        <div class="logo_box">
+            <img src="images/icon_logo.png" alt="logo" class="logo"/>
+            <div class="btn_wyqxf_box">
+                <p><img src="images/icon_people01.png" alt="icon_people01 " class="icon_people01 swing"/>
+                <img src="images/icon_people02.png" alt="icon_people02" class="icon_people02"/></p>
+                <button class="btn_wyqxf"><img src="images/icon_btn_wyxf.png" alt=""/></button>
+            </div>
+            <img src="images/icon_time.png" alt="icon_time" class="icon_time"/>
+            <img src="images/icon_text01.png" alt="icon_text01" class="icon_text01"/>
+        </div>
+        <div class="bg_sz">
+            <img src="images/bg_shengyue.png" alt="" class="bg_shengyue"/>
+            <img src="images/bg_shengyue_text.png" alt="" class="bg_shengyue_text"/>
+        </div>
+    </div>
+    <!--首页end-->
+    <!--活动界面-->
+    <div class="active_page">
+        <div class="top_img ">
+            <img src="images/icon_hd.png" alt="icon_hd.png" class="icon_hd"/>
+            <div>横国后宫选妃啦，<br>
+                你能得到zhen的欢心吗？</div>
+        </div>
+        <div class="upload_box ">
+            <div class="bg_tx_box">
+                <img src="images/bg_tx.png" alt="bg_tx" class="bg_tx"/>
+                <div class="btn_upload_box clearfix">
+                    <p>请上传<br>美照</p>
+
+                </div>
+                <input class="btn_tx" type="file" id="file"/>
+                <button class="btn_tx01">上<br>传<br>美<br>照</button>
+                <button class="btn_tx02">确<br>认<br>美<br>照</button>
+                <div  class="img_tx_box" id="img_tx_box">
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="btn_game_box">
+            <button class="btn_yxxq"><img src="images/btn_yxxq.png" alt="btn_yxxq"/></button>
+            <button class="btn_wyxx"><img src="images/btn_wyxx.png" alt="btn_wyxx"/></button>
+        </div>
+    </div>
+    <!--活动界面end-->
+    <!--活动详情-->
+    <div class="details_page">
+            <div class="page6_title"><p><img  src="images/page6_title.png" alt="page6_title"/></p></div>
+            <img class="page3_yun_left" src="images/page3_yun_left.png" alt="" width="80"/>
+            <img class="page3_yun_right" src="images/page3_yun_right.png" alt="" width="80"/>
+            <div class="page6_con">
+                <div class="details_box">
+                    <div class="page6_gyg"><img src="images/icon_text_hdxq.png" alt=""/></div>
+                    <div class="details_text">横国选妃大典开始啦！上传你的头像，测试你在皇上心目中的颜值，说不定下个甄嬛就是你！
+                        参与选秀，更有皇上亲赐横国“代金券”（可用于在横店影视城官方网站上预定景区门票、酒店住宿等产品），每个小主每天都有一次机会哦，还不快行动起来！</div>
+                    <div class="page6_guize">(本活动最终解释权，归横店影视城所有)</div>
+                </div>
+
+            </div>
+        <button class="btn_backgame"><img src="images/btn_backgame.png" alt="btn_backgame"/></button>
+    </div>
+    <!--活动详情end-->
+    <!--游戏结果-->
+    <div class="gameover_page">
+        <a class="icon_hdysc"><img src="images/icon_hdysc.png" alt="icon_hdysc"/></a>
+        <img src="images/icon_title_cfdd.png" alt="icon_title_cfdd" class="icon_title_cfdd"/>
+        <div class="xk_box">
+            <!--皇后-->
+            <img src="images/icon_peolp_hh.png" alt="icon_peolp_hh" class="icon_peolp_hh" style="display: block"/>
+            <!--贵妃-->
+            <img src="images/icon_peolp_guifei.png" alt="icon_peolp_guifei" class="icon_peolp_guifei"/>
+            <!--妃子-->
+            <img src="images/icon_peolp_feizi.png" alt="icon_peolp_feizi" class="icon_peolp_feizi"/>
+            <!--贵人-->
+            <img src="images/icon_peolp_guiren.png" alt="icon_peolp_guiren" class="icon_peolp_guiren"/>
+            <!--王妃-->
+            <img src="images/icon_peolp_wangfei.png" alt="icon_peolp_wangfei" class="icon_peolp_wangfei"/>
+            <!--答应-->
+            <img src="images/icon_peolp_daying.png" alt="icon_peolp_daying" class="icon_peolp_daying"/>
+            <!--宫女-->
+            <img src="images/icon_peolp_gongnv.png" alt="icon_peolp_gongnv" class="icon_peolp_gongnv"/>
+            <!--商女-->
+            <img src="images/icon_peolp_shangnv.png" alt="icon_peolp_shangnv" class="icon_peolp_shangnv"/>
+            <!--侠女-->
+            <img src="images/icon_peolp_xianv.png" alt="icon_peolp_xianv" class="icon_peolp_xianv"/>
+            <!--平民-->
+            <img src="images/icon_peolp_pingming.png" alt="icon_peolp_pingming" class="icon_peolp_pingming"/>
+        </div>
+        <div class="btn_gameover_box">
+            <button class="btn_zsyc"><img src="images/btn_zsyc.png" alt=""/></button><button class="btn_cjyhl"><img src="images/btn_cjyhl.png" alt=""/></button>
+        </div>
+    </div>
+    <!--游戏结果end-->
+    <!--刮奖-->
+    <div class="gj_page">
+        <div class="page6_title"><p><img  src="images/page6_title.png" alt="page6_title"/></p></div>
+        <img class="page3_yun_left" src="images/page3_yun_left.png" alt="" width="80"/>
+        <img class="page3_yun_right" src="images/page3_yun_right.png" alt="" width="80"/>
+        <div class="page6_con">
+            <!--刮奖过程-->
+            <div class="gj_course">
+                <div class="page6_gyg"><img src="images/page6_gyg.png" alt=""/></div>
+                <div class="gj">
+                    <div class="gj_box">
+                        <img class="cj_bg" src="images/cj_bg.png" alt=""/>
+                        <div class="gj_bg">
+                            <div id="gj_con" class="gj_con">
+                                <div class="win">
+                                    <!--中奖-->
+                                    <img src="images/icon_zj.png" alt="" class="icon_zj"/>
+                                    <!--没奖-->
+                                    <img src="images/icon_mz.png" alt="" class="icon_mz"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="page6_guize"><img src="images/page6_guize.png" alt=""/></div>
+            </div>
+            <!--刮奖结果-->
+            <div class="gj_result_box">&nbsp;
+                <div class="gj_result">
+                    <p>商城抵金券<br><span>201603120332</span></p>
+                </div>
+                <img src="images/gj_result_text.png" alt="" class="gj_result_text"/>
+                <button class="btn_xzle"><img src="images/btn_xzle.png" alt=""/></button>
+            </div>
+        </div>
+    <!--刮奖end-->
+</div>
+    <script>
+        var loader = new resLoader({
+            resources : [
+                'images/bg_main.jpg',
+                'images/icon_yun01.png',
+                'images/icon_yun02.png',
+                'images/icon_yun03.png',
+                'images/icon_yun04.png',
+                'images/bg_shengyue.png',
+                'images/bg_shengyue_text.png',
+                'images/icon_hdysc.png',
+                'images/icon_logo.png',
+                'images/icon_people01.png',
+                'images/icon_people02.png',
+                'images/icon_btn_wyxf.png',
+                'images/icon_time.png',
+                'images/page3_con_bg.png',
+                'images/icon_text01.png',
+                'images/icon_hd.png',
+                'images/bg_tx.png',
+                'images/btn_yxxq.png',
+                'images/btn_wyxx.png',
+                'images/page6_title.png',
+                'images/page6_gyg.png',
+                'images/icon_xk.png',
+                'images/cj_bg.png',
+                'images/icon_tx_fd.png',
+                'images/icon_tx_close.png'
+            ],
+            onStart : function(total){
+                //   console.log('start:'+total);
+            },
+            onProgress : function(current, total){
+                var percent = parseInt(current/total*100);
+                $('.current').text(percent+'%');
+            },
+            onComplete : function(){
+                $(".loading_page").fadeOut(600);
+
+                setTimeout(function(){
+                    $(".bg_sz").fadeIn(500);
+
+                },600);
+                setTimeout(function(){
+                    $(".bg_shengyue_text").fadeIn(600);
+                },1500);
+
+                setTimeout(function(){
+                    $(".bg_sz").fadeOut(500);
+                    $(".btn_wyqxf_box").addClass("slideInLeft");
+                    $(".icon_text01").addClass("slideDownIn");
+                    $(".icon_time").addClass("slideDownIn");
+                },3600);
+                setTimeout(function(){
+                    $(".logo").addClass("slideInDown");
+                },4000);
+                setTimeout(function(){
+                    $(".icon_people01 ").fadeIn(300);
+                },4800);
+            }
+        });
+        loader.start();
+    </script>
+    <script src="js/pageResponse.min.js"></script>
+    <script src="js/wScratchPad.min.js"></script>
+    <script >
+        window.onload  = function(){
+            $("#gj_con").wScratchPad({
+                size        : 15,
+                bg          : false,
+                fg          : "./images/gjq_img.png",
+                realtime    : true,
+                //     scratchDown : null,
+                scratchDown   : function(e, percent){
+                    $(".win").show();
+                },
+                scratchMove : function(e, percent){
+                    if(percent >50){
+                        this.clear();
+                    }
+                }
+            });
+            pageResponse({
+                selectors : '.gj_page',
+                //模块选择器，使用querySelectorAll的方法
+                mode : 'contain',     // auto || contain || cover ，默认模式为auto
+                width : '375',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+                height : '603'      //输入页面的高度，只支持输入数值，默认高度为504px
+            });
+
+        };
+        $(function(){
+            pageResponse({
+                selectors : '.index_box,.active_page,.details_page,.gameover_page',
+                //模块选择器，使用querySelectorAll的方法
+                mode : 'contain',     // auto || contain || cover ，默认模式为auto
+                width : '375',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+                height : '603'      //输入页面的高度，只支持输入数值，默认高度为504px
+            });
+        })
+    </script>
+<script src="js/index.js"></script>
+<script src="js/all.js"></script>
+<script >
+    window.page = {};
+
+    $(function(){
+        $("#file").click(function(){
+//            Zepto(function($){
+//                page.eidtor = new tg.ImageEditor({
+//                    trigger: $('#file'),
+//                    container: $('#img_tx_box'),
+//
+//                    stageX:  $('#img_tx_box')[0].offsetLeft
+//                });
+//            });
+//        });
+            $(".btn_upload_box p").fadeOut(200);
+            $("#img_tx_box canvas").remove();
+            page.Notice = function(text){
+                this.container = $('<div><p style="margin-top:50%">'+text+'</div>').appendTo('body');
+                this.container.css({
+                    'position': 'absolute',
+                    'width': '100%',
+                    'height': '100%',
+                    'left': '0',
+                    'top': '0',
+                    'background-color': 'rgba(0,0,0,0.8)',
+                    'color': '#fff',
+                    'z-index': '9999',
+                    'text-align': 'center'
+                });
+            };
+
+            page.Notice.prototype.setInfo = function(text){
+                this.container.find('p').text(text);
+            }
+
+            page.Notice.prototype.show = function(){
+                this.container.show();
+            }
+
+            page.Notice.prototype.remove = function(){
+                this.container.remove();
+            }
+
+            Zepto(function($) {
+                page.eidtor = new tg.ImageEditor({
+                    trigger: $('#file'),
+                    container: $('#img_tx_box'),
+                    width: 114,
+                    height: 106,
+                    stageX: $('#img_tx_box')[0].offsetLeft,
+                    iconScale: {
+                        url: 'images/icon_tx_fd.png',
+                        rect: [0, 0, 25, 25]
+                    },
+                    iconClose: {
+                        url: 'images/icon_tx_close.png',
+                        rect: [0, 0, 25, 25]
+                    }
+                });
+
+            });
+            $(document).on('touchend', function(){
+                page.eidtor.unSelect();
+            });
+    });
+    });
+</script>
+</div>
+</body>
+</html>
